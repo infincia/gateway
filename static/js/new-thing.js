@@ -85,6 +85,19 @@ NewThing.prototype.view = function() {
            Save
          </button>
        </div>`;
+     case 'onOffTemperatureLight':
+       return `<div id="new-thing-${this.id}"
+                  class="new-thing on-off-light">
+          <div class="new-thing-icon"></div>
+          <div class="new-thing-metadata">
+            <input type="text" class="new-thing-name"
+                   value="${this.description.name}"/>
+            <span class="new-thing-type">Temperature Light</span>
+          </div>
+          <button class="new-thing-save-button text-button">
+            Save
+          </button>
+        </div>`;
     case 'dimmableLight':
       return `<div id="new-thing-${this.id}"
                    class="new-thing on-off-light">
@@ -106,6 +119,19 @@ NewThing.prototype.view = function() {
            <input type="text" class="new-thing-name"
                   value="${this.description.name}"/>
            <span class="new-thing-type">Dimmable Color Light</span>
+         </div>
+         <button class="new-thing-save-button text-button">
+           Save
+         </button>
+       </div>`;
+    case 'dimmableTemperatureLight':
+      return `<div id="new-thing-${this.id}"
+                   class="new-thing on-off-light">
+         <div class="new-thing-icon"></div>
+         <div class="new-thing-metadata">
+           <input type="text" class="new-thing-name"
+                  value="${this.description.name}"/>
+           <span class="new-thing-type">Dimmable Temperature Light</span>
          </div>
          <button class="new-thing-save-button text-button">
            Save

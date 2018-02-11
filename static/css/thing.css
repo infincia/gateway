@@ -143,7 +143,7 @@
 
 /* Color Light */
 
-.on-off-label, .color-light-label {
+.on-off-label, .color-light-label, .temperature-light-label {
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -157,7 +157,8 @@
   color: #5d9bc7;
 }
 
-.color-light-icon-path {
+.light-icon-path,
+.temperature-light-icon-path {
   fill: #fff;
   stroke: #fff;
 }
@@ -166,12 +167,18 @@
   stroke: #666;
 }
 
-.on .color-light {
+.temperature-light.warm-temperature .temperature-light-icon-path {
+  stroke: #666;
+}
+
+.on .color-light,
+.on .temperature-light {
   color: #5d9bc7;
 }
 
 .unknown-thing,
 .dimmable-light,
+.temperature-light,
 .color-light,
 .level-bar-container {
   box-sizing: border-box;
@@ -192,6 +199,7 @@
 
 .unknown-thing img,
 .dimmable-light-icon,
+.temperature-light-icon,
 .color-light-icon,
 .thing-detail-layout-links,
 .level-bar-info {

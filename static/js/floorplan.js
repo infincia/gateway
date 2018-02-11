@@ -12,7 +12,7 @@
 
 /* globals UnknownThing, OnOffSwitch, BinarySensor, ColorLight,
   MultiLevelSwitch, OnOffLight, DimmableLight, DimmableColorLight,
-  MultiLevelSensor, SmartPlug */
+  MultiLevelSensor, SmartPlug, TemperatureLight, DimmableTemperatureLight */
 
 // eslint-disable-next-line no-unused-vars
 var FloorplanScreen = {
@@ -81,6 +81,10 @@ var FloorplanScreen = {
               console.log('rendering new color light');
               this.things.push(new ColorLight(description, 'svg'));
               break;
+            case 'onOffTemperatureLight':
+              console.log('rendering new temperature light');
+              this.things.push(new TemperatureLight(description, 'svg'));
+              break;
             case 'dimmableLight':
               console.log('rendering new dimmable light');
               this.things.push(new DimmableLight(description, 'svg'));
@@ -88,6 +92,10 @@ var FloorplanScreen = {
             case 'dimmableColorLight':
               console.log('rendering new dimmable color light');
               this.things.push(new DimmableColorLight(description, 'svg'));
+              break;
+            case 'dimmableTemperatureLight':
+              console.log('rendering new dimmable temperature light');
+              this.things.push(new DimmableTemperatureLight(description, 'svg'));
               break;
             case 'binarySensor':
               console.log('rendering new binary sensor');
