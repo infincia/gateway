@@ -141,6 +141,19 @@
   background-image: url('../images/bulb-off.png');
 }
 
+/* Image Detail */
+
+.image-detail {
+    width: 34rem;
+    height: 25rem;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.image-detail img {
+    max-height: 26rem;
+}
+
 /* Color Light */
 
 .on-off-label, .color-light-label {
