@@ -23,6 +23,7 @@ const OnOffLight = require('./on-off-light');
 const MultiLevelSwitch = require('./multi-level-switch');
 const MultiLevelSensor = require('./multi-level-sensor');
 const SmartPlug = require('./smart-plug');
+const Camera = require('./camera');
 const Menu = require('./menu');
 
 // eslint-disable-next-line no-unused-vars
@@ -123,6 +124,11 @@ const ThingsScreen = {
               console.log('rendering new smart plug');
               new SmartPlug(description);
               break;
+            case 'camera':
+              console.log('rendering new camera');
+              // eslint-disable-next-line no-unused-vars
+              new Camera(description);
+              break;
             default:
               console.log('rendering new thing');
               new UnknownThing(description);
@@ -195,6 +201,11 @@ const ThingsScreen = {
             console.log('rendering new smart plug');
             // eslint-disable-next-line no-unused-vars
             thing = new SmartPlug(description, 'htmlDetail');
+            break;
+          case 'camera':
+            console.log('rendering new camera');
+            // eslint-disable-next-line no-unused-vars
+            thing = new Camera(description, 'htmlDetail');
             break;
           default:
             console.log('rendering new thing');

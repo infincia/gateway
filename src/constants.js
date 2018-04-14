@@ -88,6 +88,7 @@ exports.THING_TYPE_ON_OFF_LIGHT = 'onOffLight';
 exports.THING_TYPE_DIMMABLE_LIGHT = 'dimmableLight';
 exports.THING_TYPE_ON_OFF_COLOR_LIGHT = 'onOffColorLight';
 exports.THING_TYPE_DIMMABLE_COLOR_LIGHT = 'dimmableColorLight';
+exports.THING_TYPE_CAMERA = 'camera';
 
 // OAuth things
 exports.ACCESS_TOKEN = 'access_token';

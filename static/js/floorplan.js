@@ -21,6 +21,8 @@ const OnOffLight = require('./on-off-light');
 const MultiLevelSwitch = require('./multi-level-switch');
 const MultiLevelSensor = require('./multi-level-sensor');
 const SmartPlug = require('./smart-plug');
+const Camera = require('./camera');
+
 
 // eslint-disable-next-line no-unused-vars
 const FloorplanScreen = {
@@ -113,6 +115,10 @@ const FloorplanScreen = {
           case 'smartPlug':
             console.log('rendering new smart plug');
             this.things.push(new SmartPlug(description, 'svg'));
+            break;
+          case 'camera':
+            console.log('rendering new camera');
+            this.things.push(new Camera(description, 'svg'));
             break;
           default:
             console.log('rendering new thing');
