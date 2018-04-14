@@ -12,7 +12,7 @@
 
 /* globals UnknownThing, OnOffSwitch, BinarySensor, ColorLight,
   MultiLevelSwitch, OnOffLight, DimmableLight, DimmableColorLight,
-  MultiLevelSensor, SmartPlug */
+  MultiLevelSensor, SmartPlug, Camera */
 
 // eslint-disable-next-line no-unused-vars
 const FloorplanScreen = {
@@ -105,6 +105,10 @@ const FloorplanScreen = {
           case 'smartPlug':
             console.log('rendering new smart plug');
             this.things.push(new SmartPlug(description, 'svg'));
+            break;
+          case 'camera':
+            console.log('rendering new camera');
+            this.things.push(new Camera(description, 'svg'));
             break;
           default:
             console.log('rendering new thing');

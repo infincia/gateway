@@ -12,7 +12,7 @@
 
 /* globals AddThingScreen, UnknownThing, OnOffSwitch, BinarySensor, ColorLight,
  DimmableLight, DimmableColorLight, OnOffLight, MultiLevelSwitch,
- MultiLevelSensor, SmartPlug, Menu */
+ MultiLevelSensor, SmartPlug, Camera, Menu */
 
 // eslint-disable-next-line no-unused-vars
 const ThingsScreen = {
@@ -112,6 +112,11 @@ const ThingsScreen = {
               console.log('rendering new smart plug');
               new SmartPlug(description);
               break;
+            case 'camera':
+              console.log('rendering new camera');
+              // eslint-disable-next-line no-unused-vars
+              var newCamera = new Camera(description);
+              break;
             default:
               console.log('rendering new thing');
               new UnknownThing(description);
@@ -184,6 +189,11 @@ const ThingsScreen = {
             console.log('rendering new smart plug');
             // eslint-disable-next-line no-unused-vars
             thing = new SmartPlug(description, 'htmlDetail');
+            break;
+          case 'camera':
+            console.log('rendering new camera');
+            // eslint-disable-next-line no-unused-vars
+            thing = new Camera(description, 'htmlDetail');
             break;
           default:
             console.log('rendering new thing');

@@ -153,6 +153,18 @@ NewThing.prototype.view = function() {
            Save
          </button>
        </div>`;
+    case 'camera':
+      return `<div id="new-thing-${Utils.escapeHtml(this.id)}" class="new-thing camera">` +
+             `  <div class="new-thing-icon"></div>` +
+             `  <div class="new-thing-metadata">` +
+             `    <input type="text" class="new-thing-name"
+                         value="${Utils.escapeHtml(this.description.name)}"/>` +
+             `    <span class="new-thing-type">Camera</span>` +
+             `  </div>` +
+             `  <button class="new-thing-save-button text-button">` +
+             `    Save` +
+             `  </button>` +
+             `</div>`;
     default:
       return `<div id="new-thing-${Utils.escapeHtml(this.id)}"` +
              `  class="new-thing">` +

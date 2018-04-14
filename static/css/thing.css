@@ -141,6 +141,30 @@
   background-image: url('../images/bulb-off.png');
 }
 
+/* Camera */
+
+.camera-thing {
+    width: 14em;
+}
+
+.camera-container {
+  background: #88b6d6;
+  fill: #fff;
+}
+
+.camera-thing .camera-container {
+    overflow: hidden;
+    border-radius: 2rem;
+    height: 10.5em;
+    width: 14em;
+}
+
+.camera-thing .camera-container img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
 /* Image Detail */
 
 .image-detail {
@@ -205,7 +229,8 @@
 .unknown-thing,
 .dimmable-light,
 .color-light,
-.level-bar-container {
+.level-bar-container,
+.camera-container {
   box-sizing: border-box;
   display: block;
   width: 12.8rem;
@@ -226,7 +251,8 @@
 .dimmable-light-icon,
 .color-light-icon,
 .thing-detail-layout-links,
-.level-bar-info {
+.level-bar-info,
+.camera-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -257,7 +283,8 @@
   transform: rotate(-90deg) translate(-3rem, 0);
 }
 
-.level-bar-container {
+.level-bar-container,
+.camera-container {
   background: #88b6d6;
 }
 
