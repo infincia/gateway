@@ -154,6 +154,25 @@
     max-height: 26rem;
 }
 
+/* Choice Detail */
+
+.choice-detail {
+
+}
+
+.choice-detail .choice-input {
+    max-width: 95%;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border: none;
+    font-size: 0.9em;
+    overflow: hidden;
+    max-width: 95%;
+    outline: none;
+    text-align: center;
+    text-align-last: center;
+}
+
 /* Color Light */
 
 .on-off-label, .color-light-label {
