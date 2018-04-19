@@ -131,6 +131,10 @@
   background-image: url('../images/smart-plug.svg');
 }
 
+.new-thing.garage-door .new-thing-icon {
+  background-image: url('../images/garage-door.png');
+}
+
 .new-thing.web-thing .new-thing-icon {
   background-image: url('../images/web-thing-icon.svg');
 }

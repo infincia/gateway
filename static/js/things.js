@@ -22,6 +22,7 @@ const OnOffLight = require('./on-off-light');
 const MultiLevelSwitch = require('./multi-level-switch');
 const MultiLevelSensor = require('./multi-level-sensor');
 const SmartPlug = require('./smart-plug');
+const GarageDoor = require('./garage-door');
 const Menu = require('./menu');
 
 // eslint-disable-next-line no-unused-vars
@@ -122,6 +123,10 @@ const ThingsScreen = {
               console.log('rendering new smart plug');
               new SmartPlug(description);
               break;
+            case 'garageDoor':
+              console.log('rendering new garage door');
+              new GarageDoor(description);
+              break;
             default:
               console.log('rendering new thing');
               new UnknownThing(description);
@@ -194,6 +199,11 @@ const ThingsScreen = {
             console.log('rendering new smart plug');
             // eslint-disable-next-line no-unused-vars
             thing = new SmartPlug(description, 'htmlDetail');
+            break;
+          case 'garageDoor':
+            console.log('rendering new garage door');
+            // eslint-disable-next-line no-unused-vars
+            thing = new GarageDoor(description, 'htmlDetail');
             break;
           default:
             console.log('rendering new thing');

@@ -141,6 +141,27 @@
   background-image: url('../images/bulb-off.png');
 }
 
+
+/* Garage Door */
+.garage-door-container {
+
+}
+
+.garage-door-container .garage-door {
+}
+
+
+.garage-door-container .garage-door img {
+
+    top: 45%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 96px;
+    height: 96px;
+}
+
+
 /* Color Light */
 
 .on-off-label, .color-light-label {
@@ -173,7 +194,8 @@
 .unknown-thing,
 .dimmable-light,
 .color-light,
-.level-bar-container {
+.level-bar-container,
+.garage-door-container {
   box-sizing: border-box;
   display: block;
   width: 12.8rem;
@@ -194,7 +216,8 @@
 .dimmable-light-icon,
 .color-light-icon,
 .thing-detail-layout-links,
-.level-bar-info {
+.level-bar-info,
+.garage-door-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -225,7 +248,8 @@
   transform: rotate(-90deg) translate(-3rem, 0);
 }
 
-.level-bar-container {
+.level-bar-container,
+.garage-door-container {
   background: #88b6d6;
 }
 
